@@ -52,7 +52,9 @@ const keywords = {
     'alimentación': 'Las opciones de alimentación en el campus incluyen varios comedores.',
   };
 const Chatbot = () => {
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    { text: 'Hola, ¿en qué puedo ayudarte?', user: false }
+  ]);
   
   const [input, setInput] = useState('');
 
