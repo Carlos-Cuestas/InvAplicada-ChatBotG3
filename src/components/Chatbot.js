@@ -71,12 +71,12 @@ const Chatbot = () => {
   };
 
 return (
-  <div style={{ width: '400px', margin: '0 auto', border: '1px solid #ccc', padding: '10px' }}>
+  <div style={{ width: '400px', margin: '0 auto', border: '1px solid #ccc', padding: '10px', color: 'black', backgroundColor: 'white' }}>
     {/* Contenedor para mostrar los mensajes */}
     <div style={{ height: '300px', overflowY: 'scroll', marginBottom: '10px' }}>
       {messages.map((msg, index) => (
         <div key={index} style={{ textAlign: msg.user ? 'right' : 'left' }}>
-          <div style={{ display: 'inline-block', padding: '10px', borderRadius: '10px', backgroundColor: msg.user ? '#cce4ff' : '#e0e0e0', margin: '5px 0' }}>
+          <div style={{ display: 'inline-block', padding: '10px', borderRadius: '10px', backgroundColor: msg.user ? '#0073a5' : '#5a7ec9', margin: '5px 0' }}>
             {msg.text}
           </div>
         </div>
